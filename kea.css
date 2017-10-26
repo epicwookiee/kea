@@ -1,0 +1,48 @@
+
+
+
+/* Mobile CSS */
+header {
+  text-align: center;
+}
+
+.topNav {
+  display: block;
+  align-items: center;
+  text-align: center;
+  display: block;
+  width: 85%;
+  padding: 5px;
+  margin: auto;
+  clear: both;
+}
+
+p {
+  text-align: center;
+}
+
+/* Tablet CSS */
+@media only screen and (min-width: 600px) {
+  header {
+    clear: both;
+    text-align: left;
+    float: left;
+    clear: both;
+
+  }
+
+  .topNav {
+    text-align: center;
+    width: 85%;
+    font-weight: bold;
+    display: inline-flex;
+    margin: auto;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+  .topNav {
+    float: right;
+  }
+}
