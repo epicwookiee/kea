@@ -1,48 +1,163 @@
-
-
-
-/* Mobile CSS */
-header {
-  text-align: center;
+/*Home Page*/
+body {
+  background-color: #808080;
+  background-image: url(images/white.png);
+  background-repeat: repeat-y;
+  background-position: center;
 }
 
-.topNav {
-  display: block;
-  align-items: center;
-  text-align: center;
-  display: block;
-  width: 85%;
-  padding: 5px;
+.container {
+  height: inherit;
+  position: relative;
   margin: auto;
-  clear: both;
+  align-content: center;
+  align:center
 }
 
-p {
+.about {
+  margin: auto;
+  text-align: center;
+  color: black;
+  width: 50%;
+  margin-top: 5%;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px;
+  height: 100%;
+  align: center;}
+
+/*Local*/
+.travel {
+  margin-top: 5%;
+  margin-left: 1%;
+  color: black;
+  float: left;
   text-align: center;
 }
 
-/* Tablet CSS */
-@media only screen and (min-width: 600px) {
-  header {
-    clear: both;
-    text-align: left;
-    float: left;
-    clear: both;
-
-  }
-
-  .topNav {
-    text-align: center;
-    width: 85%;
-    font-weight: bold;
-    display: inline-flex;
-    margin: auto;
-  }
+.travel p {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  font-family: 'Lato', sans-serif;
+}
+/*Top Nav*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
 }
 
-/* Desktop */
-@media only screen and (min-width: 800px) {
-  .topNav {
-    float: right;
-  }
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+.topnav a.active {
+    background-color: #80b0fc;
+    color: black;
+}
+
+/*Slideshow*/
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.mySlides {
+    display: none;
+    width: 50%;
+    align-content: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

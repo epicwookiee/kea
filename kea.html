@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="kea.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="kea.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="kea.css">
   </head>
 
-    <title>
-      Kentucky Ever After
-    </title>
 
-      <header>
-        Kentucky Ever After
-      </header>
+  <div class="topnav" id="myTopnav">
+    <a href="kea.html" class="active">Home</a>
+    <a href="local.html">Local Travels</a>
+    <a href="#shop">Shop</a>
+    <a href="contact.html">Contact Us!</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
 
-  <div class="topNav">
-    <a href="/Home/">Home</a>
-    <a href="about.html">About</a>
-    <a href="">Local Travels</a>
-    <a href="">Shop</a>
-    <a href="">Contact Us!</a>
-  <div>
+  <div class="slideshow-container" align="center">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/blue.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
 
-<body>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/red.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <!--<div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images\bardstown.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>-->
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<div class="container">
+<div class="about">
   <p>
     Welcome to our travel site. We are from Louisville, KY, but our adventures
     take us all kinds of places! For the most part, we take short trips to local
@@ -29,4 +56,5 @@
     of all...DISNEY WORLD! On this site, we invite you to join us as we show you
     our favorite foods, attractions and tips for some of the places we go.
   </p>
-</body>
+</div></div>
+</html>
