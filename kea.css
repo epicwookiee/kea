@@ -1,9 +1,16 @@
 /*Home Page*/
 body {
   background-color: #808080;
-  background-image: url(images/white.png);
   background-repeat: repeat-y;
   background-position: center;
+}
+
+.main {
+  background-color: white;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  min-height:calc(100vh - 47px);
 }
 
 .container {
@@ -18,7 +25,7 @@ body {
   margin: auto;
   text-align: center;
   color: black;
-  width: 50%;
+  width: 100%;
   margin-top: 5%;
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -36,13 +43,49 @@ body {
   text-align: center;
 }
 
+.travel img {
+  width: 65%;
+}
+
 .travel p {
-  width: 50%;
+  width: 75%;
   text-align: center;
   margin: auto;
   margin-top: 2%;
   font-family: 'Lato', sans-serif;
 }
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.imgs {
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  border-radius: 100%;
+  margin: 10px 5px;
+  display: flex;
+}
+
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 /*Top Nav*/
 .topnav {
     background-color: #333;
@@ -73,19 +116,24 @@ body {
 }
 
 /*Slideshow*/
+.slideshow-container img {
+  width: 100%;
+  padding: 10px;
+}
 
 * {box-sizing:border-box}
 
 .slideshow-container {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
   position: relative;
-  margin: auto;
   text-align: center;
-  align-items: center;
+  padding: 15px;
 }
 
 .mySlides {
     display: none;
-    width: 50%;
     align-content: center;
 }
 
@@ -93,10 +141,10 @@ body {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 10%;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -104,12 +152,16 @@ body {
 }
 
 .next {
-  right: 0;
+  right: -3%;
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  left: -3%;
+}
+
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(128,176,252,0.8);
 }
 
 .text {
@@ -139,6 +191,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  position: relative;
 }
 
 .active, .dot:hover {
