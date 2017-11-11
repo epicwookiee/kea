@@ -161,7 +161,7 @@ body {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(128,176,252,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .text {
