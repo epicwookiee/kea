@@ -30,7 +30,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 20px;
   height: 100%;
   align: center;}
 
@@ -85,6 +85,27 @@ body {
   justify-content: center;
   width: 100%;
 }
+/*Disney*/
+.disneyAbout {
+  font-family: 'Lato', sans-serif;
+  padding: 10px 20px;
+}
+
+/*Contact*/
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+}
+.social img {
+  margin: 5px 20px;
+  border-style: hidden;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
 
 /*Top Nav*/
 .topnav {
@@ -93,13 +114,15 @@ body {
 }
 
 .topnav a {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 12px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .topnav a:hover {
@@ -126,6 +149,7 @@ body {
 .slideshow-container {
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   width: 100%;
   position: relative;
   text-align: center;
@@ -213,4 +237,11 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/*Media Queries*/
+@media screen and (max-width: 720px) {
+  .main {
+    width: 100%;
+  }
 }
