@@ -89,9 +89,56 @@ body {
 .disneyAbout {
   font-family: 'Lato', sans-serif;
   padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
+.disneyAbout img {
+  width: 100%;
+  display: flex;
+}
+
+.dis {
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  border-radius: 100%;
+  margin: 10px 5px;
+  display: flex;
+}
+
+.disneyImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+
 /*Contact*/
+
+.suggestion {
+  width: 50%;
+  display: inline-grid;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sugCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.suggestion input {
+  margin: 5px;
+}
+
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -100,11 +147,14 @@ body {
   width: 100%;
 }
 .social img {
-  margin: 5px 20px;
+  margin: 10px 5px;
   border-style: hidden;
   border-radius: 100%;
   width: 50px;
   height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*Top Nav*/
@@ -243,5 +293,17 @@ body {
 @media screen and (max-width: 720px) {
   .main {
     width: 100%;
+  }
+
+  @media screen and (max-width:450px) {
+  .topnav {
+    display: inline-grid;
+text-align: center;
+    width: 100%;
+  }
+  .topnav a.active {
+      background-color: #80b0fc;
+      color: black;
+      width: 100%;
   }
 }
